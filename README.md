@@ -25,7 +25,7 @@ $database->Disconnect();
 
 TODO
 ----
-Ability to pass configuration as paramaeter instead of reading it from configuration.php
-Object binding
-... 
+* Ability to pass configuration as paramaeter instead of reading it from configuration.php
+* Object binding
+* ... 
 
