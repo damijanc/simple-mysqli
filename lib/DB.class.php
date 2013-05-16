@@ -14,7 +14,7 @@ class DB {
 
   public function __destruct () {
     if ($this->blnConnected) {
-      $this->Disconnect($param);
+      $this->Disconnect();
     }
   }
 
@@ -141,7 +141,7 @@ class DB {
     $this->mysqli->query($strNonQuery);
 
     if ($this->mysqli->error){
-      throw new Exception($this->objMySqli->error, $this->objMySqli->errno);
+      throw new Exception($this->mysqli->error, $this->mysqli->errno);
       exit();
     }
     return $this->mysqli->insert_id;
