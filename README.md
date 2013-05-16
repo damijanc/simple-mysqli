@@ -4,7 +4,7 @@ simple-mysqli
 Simple wrapper for PHP MySqli driver
 
 
-This lib simplifies usage of mysqli. Simple use case.
+This lib simplifies usage of mysqli. Simple use case:
 ```php
 $database =  new DB();
 $database->Connect();
@@ -22,6 +22,8 @@ $query = sprintf('SELECT * from db_test where id = %s', $id);
 $result = $database->Query($query);
 $database->Disconnect();
 ```
+
+Check test for full use case.
 
 TODO
 ----
