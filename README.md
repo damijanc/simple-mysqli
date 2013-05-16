@@ -4,7 +4,7 @@ simple-mysqli
 Simple wrapper for PHP MySqli driver
 
 
-This lib simplifies usage of mysqli. Simple use case.
+This lib simplifies usage of mysqli. Simple use case:
 ```php
 $database =  new DB();
 $database->Connect();
@@ -23,9 +23,11 @@ $result = $database->Query($query);
 $database->Disconnect();
 ```
 
+Check test for full use case.
+
 TODO
 ----
-Ability to pass configuration as paramaeter instead of reading it from configuration.php
-Object binding
-... 
+* Ability to pass configuration as paramaeter instead of reading it from configuration.php
+* Object binding
+* ... 
 
